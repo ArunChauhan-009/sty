@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Londrina+Sketch&family=Mate+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  font-family: "Mate SC", serif;
+}
+
+.navbar {
+  background-color: #2b6e2b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+}
+.navbar nav ul li {
+  margin-left: 1.5rem;
+}
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar nav ul li a:hover {
+  color: #c3e6cb;
+}
+
+
+.hero {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  position: relative;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  background-color: #c3e6cb;
+  color: #2b6e2b;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.cta-button:hover {
+  background-color: #9bc99b;
+}
+
+
+.products {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.product {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product h3 {
+  margin: 1rem 0 0.5rem;
+  color: #2b6e2b;
+}
+.product button {
+  background-color: #2b6e2b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product button:hover {
+  background-color: #4e8f4e;
+}
+
+
+.sustainability {
+  padding: 4rem 2rem;
+  background-color:gray;
+  text-align: center;
+}
+.sustainability h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.sustainability-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.feature {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.team {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: gray;
+}
+
+
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: url('https://via.placeholder.com/1200') center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(43, 110, 43, 0.8);
+  z-index: 1;
+}
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.contact p {
+  position: relative;
+  z-index: 2;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.contact a {
+  color: #c3e6cb;
+  text-decoration: underline;
+}
+
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.contact-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2b6e2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover {
+  background-color: #4e8f4e;
+}
+
+
+.social-media {
+  margin-top: 2rem;
+}
+.social-media h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #c3e6cb;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
